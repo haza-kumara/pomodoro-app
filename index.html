@@ -1,12 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Pixel Pomodoro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    
+  <div class="app">
+
+    <div class="title">Pomodoro<br>Timer</div>
+
+    <div class="main-layout">
+      <div class="left">
+        <div class="clock-box">
+          <span id="timerDisplay">25:00</span>
+        </div>
+
+        <div class="session-label" id="sessionLabel">Focus Time</div>
+        <div class="quote" id="quoteText">take a breath,<br>you are right on time ☺</div>
+
+        <div class="btn-row center">
+          <button id="btnStart" class="btn">Start</button>
+        </div>
+        <div class="btn-row">
+          <button id="btnPause" class="btn">Pause</button>
+          <button id="btnReset" class="btn">Reset</button>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="setting-item">
+          <div class="setting-label">Focus:</div>
+          <input type="number" id="inputFocus" class="setting-input" value="25" min="1" max="99">
+        </div>
+        <div class="setting-item">
+          <div class="setting-label">Short<br>Break:</div>
+          <input type="number" id="inputShort" class="setting-input" value="5" min="1" max="99">
+        </div>
+        <div class="setting-item">
+          <div class="setting-label">Long<br>Break:</div>
+          <input type="number" id="inputLong" class="setting-input" value="15" min="1" max="99">
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="renderer.js"></script>
 </body>
 </html>
