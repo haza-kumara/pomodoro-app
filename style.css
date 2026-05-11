@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@font-face {
+    font-family: 'Minecraft';
+    src: url(Minecraft.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F0ECE0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+}
+
+.app {
+    background: #1a1a1a;
+    border: 4px solid #5c3a1e;
+    box-shadow: 6px 6px 6px #5c3a1e;
+    padding: 1.9rem;
+    width: 340px;
+    font-family: 'Minecraft';
+}
+
+.title {
+    font-optical-sizing: auto;
+    color: #5c3a1e;
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+}
+
+.main-layout{
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.clock-box {
+    background: #f5e6c8;
+    border: 3px solid #5c3a1e;
+    box-shadow: 3px 3px 3px #5c3a1e;
+    padding: 0.75rem 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.clock-box span {
+    font-size: 30px;
+    color: #2a1a0a;
+    letter-spacing: 2px;
+}
+
+.session-label {
+    font-size: 15px;
+    color: #5c3a1e;
+    text-align: center;
+}
+
+.quote {
+  font-size: 7px;
+  color: #8B6914;
+  text-align: center;
+  line-height: 2;
+}
+
+.btn-row {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn {
+  font-family: 'Minecraft' ;
+  font-size: 14px;
+  background: #C8A97A;
+  border: 3px solid #5C3A1E;
+  box-shadow: 3px 3px 3px #5C3A1E;
+  padding: 8px 14px;
+  color: #5C3A1E;
+  cursor: pointer;
+  transition: transform 0.05s;
+}
+
+.btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 #5C3A1E;
+}
+
+.btn:hover {
+  background: #D4B98A;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 75px;
+}
+
+.setting-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.setting-label {
+  font-size: 7px;
+  color: #5C3A1E;
+  line-height: 1.8;
+}
+
+.setting-input {
+  font-family:'Minecraft';
+  font-size: 9px;
+  background: #F5E6C8;
+  border: 2px solid #5C3A1E;
+  padding: 4px 6px;
+  color: #2A1A0A;
+  width: 100%;
+  outline: none;
+}
